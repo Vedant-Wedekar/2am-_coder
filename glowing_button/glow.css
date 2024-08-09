@@ -1,0 +1,44 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    margin: 0;
+}
+
+.glowing-button {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.glowing-button::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 10px;
+    border: 2px solid #00d400b5;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.glowing-button:hover::before {
+    opacity: 1;
+    box-shadow: 0 0 10px #00d400b5;
+}
+
+.glowing-button:hover {
+    box-shadow: 0 0 10px #00d400b5;
+}
