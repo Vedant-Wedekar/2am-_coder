@@ -154,6 +154,11 @@ body {
     opacity: 1;
     transition: all 1s;
 }
+
+
+
+
+
 .star {
     position: absolute;
     background-color: white;
